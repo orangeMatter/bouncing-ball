@@ -18,10 +18,7 @@ const state: State = {
   title_text: "Bouncing balls",
 };
 
-const configuration = {
-   updateInterval: 1,
-};
-const client = new KameleoonClient({ siteCode, configuration });
+const client = new KameleoonClient({ siteCode });
 
 async function init(): Promise<void> {
   // -- Initialize the SDK
